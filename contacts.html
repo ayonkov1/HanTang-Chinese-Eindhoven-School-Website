@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        HanTang Language School
+    </title>
+</head>
+
+<body>
+
+    <header>
+      <nav>
+      	<!--put nav bar here-->
+      </nav>
+    </header>
+    <br><br>
+
+    <center>
+    
+    <section>
+       <h1> If you've got a question, don't hesitate to contact us. We'd be happy to help! </h1>
+       <h2> Contact details </h2>
+       <p> E-mail address: <!--<a href="mailto:put school email here" id=linkemail>school email </a> <--><br>
+           Phone number: <!--phone of school-->  <br>
+           WhatsApp: <!--phone number-->    <br>
+           Visit us at: <!--address--> <br>
+           Working hours: <!--work hours-->
+        </p>
+    </section>	
+    <br><br>
+
+    <section class="form"> 
+      <h3> Or ask us your question via our contact form. </h3>
+       <form action="/action_page.php">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname" placeholder="Write your name">
+          <br><br>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname" placeholder="Write your last name">
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Write your email">
+          <br><br>
+                     
+          <label for="problem">What is your question about?</label>
+          <select id="problem" name="problem">
+              <option value="opt1">Registration</option>
+              <option value="opt2">Courses</option>
+              <option value="opt3">Cost</option>
+              <option value="else">Something else</option>
+          </select>
+          <br><br>
+
+          <label for="subject">Subject: </label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <br><br>
+          
+          <button onclick="alert('Thank you for your application!')"> Submit </button>
+       </form>
+    </section>
+
+
+    </center>
+
+  <footer>
+     <!--put footer here-->
+  </footer>
+</body>
+
+</html>
