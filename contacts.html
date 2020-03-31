@@ -1,73 +1,126 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+ <html>
 
 <head>
-    <title>
-        HanTang Language School
-    </title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width = device-width, initial-scale = 1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <title>HanTang Language School</title>
 </head>
 
 <body>
 
-    <header>
-      <nav>
-      	<!--put nav bar here-->
-      </nav>
-    </header>
-    <br><br>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="#">About</a>
+    <a class="p-2 text-dark" href="#">Apply</a>
+    <a class="p-2 text-dark" href="#">Courses</a>
+    <a class="p-2 text-dark" href="#">Staff</a>
+    <a class="p-2 text-dark" href="#">Contact</a>
+  </nav>
+  <a class="btn btn-outline-primary" href="#">Log in</a>
+</div>
 
-    <center>
-    
-    <section>
-       <h1> If you've got a question, don't hesitate to contact us. We'd be happy to help! </h1>
-       <h2> Contact details </h2>
-       <p> E-mail address: <!--<a href="mailto:put school email here" id=linkemail>school email </a> <--><br>
+
+   <div class="container">
+
+         <div class="apply-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+           <h1 class="display-4">If you've got a question, don't hesitate to contact us. We'd be happy to help!</h1>
+           <h2 class="display-4">Contact details</h2>
+           <p class="lead">E-mail address: <!--<a href="mailto:put school email here" id=linkemail>school email </a> <--><br>
            Phone number: <!--phone of school-->  <br>
            WhatsApp: <!--phone number-->    <br>
            Visit us at: <!--address--> <br>
            Working hours: <!--work hours-->
-        </p>
-    </section>	
-    <br><br>
+           </p>
+           <h3 class="display-4">Or ask us your question via our contact form.</h3>
+         </div>
 
-    <section class="form"> 
-      <h3> Or ask us your question via our contact form. </h3>
-       <form action="/action_page.php">
-          <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="firstname" placeholder="Write your name">
-          <br><br>
 
-          <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="lastname" placeholder="Write your last name">
-          <br><br>
-
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" placeholder="Write your email">
-          <br><br>
-                     
-          <label for="problem">What is your question about?</label>
-          <select id="problem" name="problem">
+        <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFirstName">First Name</label>
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputLastName">Last Name</label>
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-group">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+  
+  <div class="form-group">
+    <label for="phone">Telephone</label>
+    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+    </div>
+  <div class="form-group">
+  <label for="courses">What is your question about?</label>
+  <select id="courses" class="form-control">
               <option value="opt1">Registration</option>
               <option value="opt2">Courses</option>
               <option value="opt3">Cost</option>
               <option value="else">Something else</option>
-          </select>
-          <br><br>
-
-          <label for="subject">Subject: </label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          <br><br>
-          
-          <button onclick="alert('Thank you for your application!')"> Submit </button>
-       </form>
-    </section>
+          </select> 
+  </div>
+  <div class="form-group">
+      <label for="subject">Subject: </label>
+      <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 
-    </center>
 
-  <footer>
-     <!--put footer here-->
+
+
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">HanTang language school &copy; 2020</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">News</a></li>
+          <li><a class="text-muted" href="#">History</a></li>
+          <li><a class="text-muted" href="#">Gallery</a></li>
+          <li><a class="text-muted" href="#">Rules</a></li>
+          <li><a class="text-muted" href="#">Parking</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Courses</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Program</a></li>
+        </ul>
+        <h5>Staff</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Admin</a></li>
+          <li><a class="text-muted" href="#">Teachers</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Login</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Admin</a></li>
+          <li><a class="text-muted" href="#">Teachers</a></li>
+          <li><a class="text-muted" href="#">Students</a></li>
+        </ul>
+        <h5>Contact</h5>
+      </div>
+    </div>
   </footer>
+
+
+   </div>
+
+
 </body>
 
-</html>
+ </html>
+
+
