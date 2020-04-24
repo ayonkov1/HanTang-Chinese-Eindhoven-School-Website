@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
 
   <title>HTLS History</title>
 </head>
@@ -29,18 +30,16 @@
             <a class="nav-link" href="apply.html">Apply Now! <span class="sr-only">(current)</span></a>
           </li>
 			<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-			   aria-haspopup="true" aria-expanded="false">Home</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="news.html">News</a>
-              <a class="dropdown-item" href="gallery.html">Gallery</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="rules.html">Rules</a>
-              <a class="dropdown-item" href="Parking.html">Parking</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <div class="btn-group"> <a href="index.html">
+        <button type="button" class="btn btn-default">Home</button>
+        </a>
+        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <a class="dropdown-item" href="news.html">News</a> <a class="dropdown-item" href="gallery.html">Gallery</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="rules.html">Rules</a> <a class="dropdown-item" href="Parking.html">Parking</a>
+        </ul>
+        </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="history.html">History</a>
@@ -49,7 +48,7 @@
             <a class="nav-link" href="contacts.html">Contacts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Staff</a>
+            <a class="nav-link" href="team.html">Our Staff</a>
 			</li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
