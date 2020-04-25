@@ -1,18 +1,48 @@
+a:link, a:visited, a:hover, a:active{
+	color: white;
+}
+
+
 body {
-background-color: lightblue;
+background-color: #0072AF;
+	color: "#00000";
+}
+
+ul.dropdown-menu.show{
+	background-color: #ffbe0b;
+	color: white;
 }
 
 
-footer {
-border: inset;
+
+
+
+/*navbar styling*/
+
+.btn-dark .btn-dark:hover .dropdown-toggle::after {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
 }
+
+.container-fluid{
+	padding-left: 7rem;
+	padding-right: 7rem
+}
+
+
+
+
+
+
+
 
 
 /*Gallery style*/
 
 .d-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat (2; 1fr);
             grid-auto-rows: 100px;
             grid-gap: 7px;
           }
