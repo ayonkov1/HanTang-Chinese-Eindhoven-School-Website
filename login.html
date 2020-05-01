@@ -7,138 +7,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="bootstrap.css">
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-  <title>HTLS Login</title>
+  <title>HanTang - Login</title>
 </head>
 
 <body>
 
-		<!--navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!--navigation bar-->
+  <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0072af">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo.svg" alt="Hantang logo" width="220"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="apply.html">Apply Now! </a>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="btn-group"> <a href="index.html">
+              <button type="button" class="btn btn-dark">Home</button>
+            </a>
+            <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <a class="dropdown-item" href="news.html">News</a>
+              <a class="dropdown-item" href="gallery.html">Gallery</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="rules.html">Rules</a> <a class="dropdown-item"
+                href="Parking.html">Parking</a>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">Our Staff</a>
+        </li>
+      </ul>
+      <!--	to be used for future ref. this is search...
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
+          </form>
+  -->
+      <a href="login.html"><button type="button" class="btn btn-dark">Log in</button>
+      </a>
+    </div>
+  </nav>
+  <!--navbar end-->
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="apply.html">Apply Now! <span class="sr-only">(current)</span></a>
-          </li>
-			<li class="nav-item dropdown">
-            <div class="btn-group"> <a href="index.html">
-        <button type="button" class="btn btn-default">Home</button>
-        </a>
-        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <a class="dropdown-item" href="news.html">News</a> <a class="dropdown-item" href="gallery.html">Gallery</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="rules.html">Rules</a> <a class="dropdown-item" href="Parking.html">Parking</a>
-        </ul>
-        </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="history.html">History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacts.html">Contacts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="team.html">Our Staff</a>
-			</li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
-        </form>
-      </div>
-    </nav>
-	<!--navbar end-->
-	
-	
-    <div class="container my-5 py-5 z-depth-1">
+
+  <div class="container my-5 py-5 z-depth-1">
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
 
 
-      <!--Section: Content-->
-      <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
-   
-  
-        <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-  
-          <!--Grid column-->
-          <div class="col-md-6">
-  
-            <!-- Default form login -->
-            <form class="text-center" action="#!">
-  
-              <p class="h4 mb-4">Sign in</p>
-  
-              <!-- Email -->
-              <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-   
-              <!-- Password -->
-              <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
-  
-              <div class="d-flex justify-content-around">
-                <div>
-                  <!-- Remember me -->
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
-                  </div>
-                </div>
-                <div>
-                  <!-- Forgot password -->
-                  <a href="">Forgot password?</a>
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-md-6">
+
+          <!-- Default form login -->
+          <form class="text-center" action="#!">
+
+            <p class="h4 mb-4">Sign in</p>
+
+            <!-- Email -->
+            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+            <!-- Password -->
+            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+            <div class="d-flex justify-content-around">
+              <div>
+                <!-- Remember me -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                  <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
                 </div>
               </div>
-  
-              <!-- Sign in button -->
-              <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
-  
-              <!-- Register -->
-              <p>Not a member?
-                <a href="">Register</a>
-              </p>
-  
-              <!-- Social login -->
-              <p>or sign in with:</p>
-  
-                  <a href="#" class="mx-1" role="button"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="mx-1" role="button"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="mx-1" role="button"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="mx-1" role="button"><i class="fab fa-github"></i></a>
-  
-            </form>
-            <!-- Default form login -->
-  
-          </div>
-          <!--Grid column-->
-  
-        </div>
-        <!--Grid row-->
-  
-  
-      </section>
-      <!--Section: Content-->
-  
-  
-    </div>
+              <div>
+                <!-- Forgot password -->
+                <a href="">Forgot password?</a>
+              </div>
+            </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-  </body>
+            <!-- Sign in button -->
+            <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+            <!-- Register -->
+            <p>Not a member?
+              <a href="">Register</a>
+            </p>
+
+            <!-- Social login -->
+            <p>or sign in with:</p>
+
+            <a href="#" class="mx-1" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="mx-1" role="button"><i class="fab fa-github"></i></a>
+
+          </form>
+          <!-- Default form login -->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>

@@ -7,39 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="bootstrap.css">
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-  <title>HTLS News</title>
+  <title>HanTang - News</title>
 </head>
 
 <body>
 
   <body>
 
-    	<!--navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Logo</a>
+    <!--navigation bar-->
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0072af">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.svg" alt="Hantang logo" width="220"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="apply.html">Apply Now! <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="apply.html">Apply Now! </a>
           </li>
-			<li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <div class="btn-group"> <a href="index.html">
-        <button type="button" class="btn btn-default">Home</button>
-        </a>
-        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <a class="dropdown-item" href="news.html">News</a> <a class="dropdown-item" href="gallery.html">Gallery</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="rules.html">Rules</a> <a class="dropdown-item" href="Parking.html">Parking</a>
-        </ul>
-        </div>
+                <button type="button" class="btn btn-dark">Home</button>
+              </a>
+              <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item" href="news.html">News</a>
+                <a class="dropdown-item" href="gallery.html">Gallery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="rules.html">Rules</a> <a class="dropdown-item"
+                  href="Parking.html">Parking</a>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="history.html">History</a>
@@ -49,162 +52,152 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="team.html">Our Staff</a>
-			</li>
+          </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
-        </form>
+        <!--	to be used for future ref. this is search...
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
+          </form>
+  -->
+        <a href="login.html"><button type="button" class="btn btn-dark">Log in</button>
+        </a>
       </div>
     </nav>
-	<!--navbar end-->
-	  
-	  
-	  
+    <!--navbar end-->
+
+
+
     <div class="container mt-5">
+      <div class="jumbotron">
 
+        <!--Section: Content-->
+        <section class="dark-grey-text">
 
-      <!--Section: Content-->
-      <section class="dark-grey-text">
+          <!-- Section heading -->
+          <h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
+          <!-- Section description -->
+          <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum
+            porro a pariatur veniam.</p>
 
-        <!-- Section heading -->
-        <h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
-        <!-- Section description -->
-        <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum
-          porro a pariatur veniam.</p>
+          <!-- Grid row -->
+          <div class="row align-items-center">
 
-        <!-- Grid row -->
-        <div class="row align-items-center">
+            <!-- Grid column -->
+            <div class="col-lg-5">
 
-          <!-- Grid column -->
-          <div class="col-lg-5">
+              <!-- Featured image -->
+              <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg"
+                  alt="Sample image">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            <!-- Featured image -->
-            <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
             </div>
+            <!-- Grid column -->
 
-          </div>
-          <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-lg-7">
+              <!-- Post title -->
+              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+              <!-- Excerpt -->
+              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.
+              </p>
+              <!-- Post data -->
+              <p>by <a><strong>Carine Fox</strong></a>, 19/08/2018</p>
+              <!-- Read more button -->
+              <a class="btn btn-success btn-md btn-rounded mx-0">Read more</a>
 
-          <!-- Grid column -->
-          <div class="col-lg-7">
-
-            <!-- Category -->
-            <a href="#!" class="green-text">
-              <h6 class="font-weight-bold mb-3"><i class="fas fa-utensils pr-2"></i>Food</h6>
-            </a>
-            <!-- Post title -->
-            <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-            <!-- Excerpt -->
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.
-            </p>
-            <!-- Post data -->
-            <p>by <a><strong>Carine Fox</strong></a>, 19/08/2018</p>
-            <!-- Read more button -->
-            <a class="btn btn-success btn-md btn-rounded mx-0">Read more</a>
-
-          </div>
-          <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-        <!-- Grid row -->
-        <div class="row align-items-center">
-
-          <!-- Grid column -->
-          <div class="col-lg-7">
-
-            <!-- Category -->
-            <a href="#!" class="green-text">
-              <h6 class="font-weight-bold mb-3"><i class="fas fa-utensils pr-2"></i>Food</h6>
-            </a>
-            <!-- Post title -->
-            <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-            <!-- Excerpt -->
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.
-            </p>
-            <!-- Post data -->
-            <p>by <a><strong>Carine Fox</strong></a>, 19/08/2018</p>
-            <!-- Read more button -->
-            <a class="btn btn-success btn-md btn-rounded mx-0">Read more</a>
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-lg-5">
-
-            <!-- Featured image -->
-            <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
             </div>
+            <!-- Grid column -->
 
           </div>
-          <!-- Grid column -->
+          <!-- Grid row -->
+          <hr class="my-4">
+          <!-- Grid row -->
+          <div class="row align-items-center">
 
-          
+            <!-- Grid column -->
+            <div class="col-lg-7">
+              <!-- Post title -->
+              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+              <!-- Excerpt -->
+              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.
+              </p>
+              <!-- Post data -->
+              <p>by <a><strong>Carine Fox</strong></a>, 19/08/2018</p>
+              <!-- Read more button -->
+              <a class="btn btn-success btn-md btn-rounded mx-0">Read more</a>
 
-        </div>
-        <!-- Grid row -->
-
-        <!-- Grid row -->
-        <div class="row align-items-center">
-
-          <!-- Grid column -->
-          <div class="col-lg-5">
-
-            <!-- Featured image -->
-            <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-              <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
             </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-5">
+
+              <!-- Featured image -->
+              <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/11/19/21/10/knowledge-1052010_960_720.jpg"
+                  alt="Sample image">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+            </div>
+            <!-- Grid column -->
+
+
 
           </div>
-          <!-- Grid column -->
+          <!-- Grid row -->
+          <hr class="my-4">
+          <!-- Grid row -->
+          <div class="row align-items-center">
 
-          <!-- Grid column -->
-          <div class="col-lg-7">
+            <!-- Grid column -->
+            <div class="col-lg-5">
 
-            <!-- Category -->
-            <a href="#!" class="green-text">
-              <h6 class="font-weight-bold mb-3"><i class="fas fa-utensils pr-2"></i>Food</h6>
-            </a>
-            <!-- Post title -->
-            <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-            <!-- Excerpt -->
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.
-            </p>
-            <!-- Post data -->
-            <p>by <a><strong>Carine Fox</strong></a>, 19/08/2018</p>
-            <!-- Read more button -->
-            <a class="btn btn-success btn-md btn-rounded mx-0">Read more</a>
+              <!-- Featured image -->
+              <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                <img class="img-fluid" src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg"
+                  alt="Sample image">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-7">
+              <!-- Post title -->
+              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+              <!-- Excerpt -->
+              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.
+              </p>
+              <!-- Post data -->
+              <p>by <a><strong>Carine Fox</strong></a>, 19/08/2018</p>
+              <!-- Read more button -->
+              <a class="btn btn-success btn-md btn-rounded mx-0">Read more</a>
+
+            </div>
+            <!-- Grid column -->
 
           </div>
-          <!-- Grid column -->
+          <!-- Grid row -->
 
-        </div>
-        <!-- Grid row -->
+        </section>
+        <!--Section: Content-->
 
-        <hr class="my-5">
-
-      </section>
-      <!--Section: Content-->
-
-
+      </div>
     </div>
 
 
@@ -219,7 +212,8 @@
 
             <!-- Grid column -->
             <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
-              <h5 class="mb-0">Get connected with us via the <a href="#" class="text-white">contacts form</a>!</h6>
+              <h5 class="mb-0">Get connected with us via the <a href="#" class="text-white">contacts form</a>!
+              </h5>
             </div>
             <!-- Grid column -->
 
