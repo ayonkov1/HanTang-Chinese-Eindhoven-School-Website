@@ -6,19 +6,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../bootstrap.css">
+  <link rel="stylesheet" href="../style.css">
 
-  <title>HanTang - Parking</title>
+  <title>HanTang - Contacts</title>
 </head>
 
 
 <body>
 
   <!--navigation bar-->
-  <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0072af">
+ <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0072af">
     <a class="navbar-brand" href="studentMain.html">
-      <img src="logo.svg" alt="Hantang logo" width="220"></a>
+      <img src="../logo.svg" alt="Hantang logo" width="220"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
               <a class="dropdown-item" href="studentGallery.html">Gallery</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="studentRules.html">Rules</a> <a class="dropdown-item"
-              href="Parking.html">Parking</a>
+              href="studentParking.html">Parking</a>
           </ul>
       </div>
   </li>
@@ -68,44 +68,76 @@
           <a class="dropdown-item" href="MyCalendar.html">My Calendar</a> 
       </ul>
 
-      <img border="0" alt="notification" src="images/notification.png" width="30" height="30">
+      <img border="0" alt="notification" src="../images/notification.png" width="30" height="30">
 
   </div>
 </li>
 </ul>
-<a href="login.html"><button type="button" class="btn btn-dark">Log out</button>
+<a href="../login.html"><button type="button" class="btn btn-dark">Log out</button>
       </a>
     </div>
   </nav>
-</div>
-</nav>
 <!-- navbar end -->
 
     <div class="container">
         <div class="jumbotron">
-            <h1>Parking</h1>
-            <p>
-                    There is a parking ban along the sidewalk on the side of the school. It is allowed to leave the car there
-                for a while to let children get in or out while the driver stays in the car.
-                Every driver must try to park the car in the school's car park as long as there is still room, even if they
-                park for a short time.
-            </p>
-            <p>
-                    Parking in front of or near houses in the streets around the school is strongly discouraged, because this
-                causes inconvenience.
-                In the 2013/14 school year, several local residents complained about the parking behavior of the school's
-                visitors on Saturday. There are even flyers in the area that call for action and people have complained to
-                the Eckart College school management. Not only do local residents experience inconvenience from parking in
-                front of their home, but there is even parking in illegal places. For example, there was parking in front of
-                garages and driveways, which is prohibited by law and very annoying for people who want to get their car out
-                of the garage. Parking is prohibited on Damocleslaan, on the side of the school. On the extension of the
-                Damocleslaan, the Nuenenseweg, parking is also not allowed and tickets are issued for it. There is no
-                traffic sign that prohibits parking, because it is clear that the road there is too narrow, with parked
-                cars, the fire brigade can no longer pass and it becomes very dangerous for cyclists. Some people put their
-                car half in the grass there. That is not allowed either. Moreover, there are almost always more than 60
-                parking spaces at the De Combinatie Jeugdzorg Nuenenseweg 4 building (200 meters from the school) on
-                Saturdays.
-            </p>
+            <div class="apply-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-5">If you've got a question, don't hesitate to contact us. We'd be happy to help!
+                </h1>
+                <hr class="my-4">
+                <h3 class="display-5">Contact details</h3>
+                <p class="lead">E-mail address:
+                    <!--<a href="mailto:put school email here" id=linkemail>school email </a> <--><br>
+                    Phone number: 
+                    <!--phone of school--> <br>
+                    WhatsApp:
+                    <!--phone number--> <br>
+                    Visit us at:
+                    <!--address--> <br>
+                    Working hours:
+                    <!--work hours-->
+                </p>
+                <hr class="my-4">
+                <h3 class="display-5">Or ask us your question via our contact form.</h3>
+            </div>
+
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputLastName">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telephone</label>
+                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                </div>
+                <div class="form-group">
+                    <label for="courses">What is your question about?</label>
+                    <select id="courses" class="form-control">
+                        <option value="opt1">Registration</option>
+                        <option value="opt2">Courses</option>
+                        <option value="opt3">Cost</option>
+                        <option value="else">Something else</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject: </label>
+                    <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
 
@@ -276,7 +308,6 @@
 
     </footer>
     <!-- Footer -->
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
