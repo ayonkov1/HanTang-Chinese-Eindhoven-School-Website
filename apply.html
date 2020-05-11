@@ -72,69 +72,105 @@
           fugiat nulla pariatur.</p>
       </div>
 
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputFirstName">First Name</label>
-            <input type="text" class="form-control" placeholder="First name">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputLastName">Last Name</label>
-            <input type="text" class="form-control" placeholder="Last name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
+      <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="mb-3 md-form col-lg-6 col-md-6" >
+      <label for="validationCustom012">First name</label>
+      <input type="text" class="form-control" id="firstname" placeholder="Samuel L." required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+		<div class="invalid-feedback">
+        Please write your first name!
+      </div>
+    </div>
+    <div class="mb-3 md-form col-lg-6 col-md-6">
+      <label for="validationCustom022">Last name</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Ipsum" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+		<div class="invalid-feedback">
+        Please write your last name!
+      </div>
+	  </div>
+    <div class="mb-3 md-form col-lg-6 col-md-6">
+      <label for="ValidationCustomEmail">Email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend2"
+        placeholder="samuelipsum@email.com" required>
+      <div class="invalid-feedback">
+        Please write your full email!
+      </div>
+	  </div>
+	  <div class="mb-3 md-form col-lg-6 col-md-6">
+		<label for="ValidationCustomAddress">Address</label>
+      <input type="text" class="form-control" id="address" aria-describedby="inputGroupPrepend2"
+        placeholder="Frederiklaan 199" required>
+      <div class="invalid-feedback">
+        Please fill this field!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3 md-form col-lg-6">
+      <label for="validationCustom032">City</label>
+      <input type="text" class="form-control" id="city" placeholder="Eindhoven" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+<div class="mb-3 md-form col-lg-6 col-md-6">
+  <label for="validationCustom052">Zip</label>
+      <input type="text" class="form-control" id="zipcode" placeholder="5616NG" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+  </div>
+	  <div class="mb-3 md-form col-lg-6 col-md-6">
+		<label for="ValidationCustomDoB">Date of Birth</label>
+      <input type="date" class="form-control" id="dob" aria-describedby="inputGroupPrepend2"
+        placeholder="01/01/1990" required>
+      <div class="invalid-feedback">
+        Please fill this field!
+      </div>
+    </div>
+		 <div class="mb-3 md-form col-lg-6 col-md-6">
+		<label for="ValidationCustomTel">Telephone</label>
+      <input type="text" class="form-control" id="phonenumber" aria-describedby="inputGroupPrepend2"
+        placeholder="0031-999-999-999" required>
+      <div class="invalid-feedback">
+        Please fill this field correctly!
+      </div>
+    </div>
+		 <div class="mb-3 md-form col-lg-4 offset-lg-4 col-md-4 offset-md-4">
+		<label for="ValidationCustomCourse">Course</label>
+      <select type="text" class="form-control" id="course" aria-describedby="inputGroupPrepend2" required>
+		  <option>Please select...</option>
+		  <option>Option 1</option>
+		  <option>Option 2</option>
+		  <option>Option 3</option>
             </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="birthdate">Date of birth</label>
-          <input class="form-control" type="date" value="1990-01-01">
-        </div>
-        <div class="form-group">
-          <label for="phone">Telephone</label>
-          <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-        </div>
-        <div class="form-group">
-          <label for="courses">What course do you want to apply for?</label>
-          <select id="courses" class="form-control">
-            <option value="opt1">opt1</option>
-            <option value="opt2">opt2</option>
-            <option value="opt3">opt3</option>
-            <option value="opt4">opt4</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck"> I want help with choosing a course </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      <div class="invalid-feedback">
+        Please Select a course!
+      </div>
+		 </div>	 
+	 </div>
+	 
+  <div class="form-group">
+    <div class="form-check pl-0">
+      <input class="form-check-input checkbox" type="checkbox" value="" id="checkbox" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
     </div>
   </div>
+  <button class="btn btn-primary btn-sm btn-rounded" type="submit">Submit form</button>
+</form>
+
+    </div>
+  </div>
+	<script>$("#needs-validation").validate();</script>
 
 
   <!-- Footer -->
@@ -314,6 +350,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+<!--	<script src="js/jquery.signup-form.js"></script>-->
+	<script src="js/JSforapply.js"></script>
 </body>
 
 </html>
