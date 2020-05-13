@@ -6,6 +6,51 @@
   <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit=no">
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="style.css">
+	
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/dist/jquery.validate.js"></script>
+	<script>
+	$.validator.setDefaults({
+		submitHandler: function() {
+			alert("submitted!");
+		}
+	});
+
+	$().ready(function() {
+		// validate the comment form when it is submitted
+		$("#commentForm").validate();
+
+		// validate signup form on keyup and submit
+		$("#signupForm").validate({
+			rules: {
+				firstname: {
+					required: true
+				},
+				lastname: "required",
+				email: {
+					required: true,
+					email: true
+				},
+				address: "required",
+				city: "required",
+				zipcode: "required",
+				birthday: "required",
+				telephone: "required",
+				course: "required",
+				agree: "required"
+			},
+			messages: {
+				firstname: "Please enter your firstname",
+				lastname: "Please enter your lastname",
+				email: "Please enter a valid email address",
+				agree: "Please accept our policy",
+				topic: "Please select at least 2 topics"
+			}
+		});
+
+	</script>
+	
+
   <title>HanTang - Apply Now</title>
 </head>
 
@@ -72,90 +117,53 @@
           fugiat nulla pariatur.</p>
       </div>
 
-      <form class="needs-validation" novalidate>
+      <form class="cmxform needs-validation" id="signupForm" method="get" action="">
   <div class="form-row">
     <div class="mb-3 md-form col-lg-6 col-md-6" >
-      <label for="validationCustom012">First name</label>
-      <input type="text" class="form-control" id="firstname" placeholder="Samuel L." required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-		<div class="invalid-feedback">
-        Please write your first name!
-      </div>
+      <label for="firstname">First name</label>
+      <input type="text" class="firstname form-control" id="firstname" placeholder="Samuel L." required>
     </div>
     <div class="mb-3 md-form col-lg-6 col-md-6">
-      <label for="validationCustom022">Last name</label>
-      <input type="text" class="form-control" id="lastname" placeholder="Ipsum" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-		<div class="invalid-feedback">
-        Please write your last name!
-      </div>
+      <label for="lastname">Last name</label>
+      <input type="text" class="lastname form-control" id="lastname" placeholder="Ipsum" required>
 	  </div>
     <div class="mb-3 md-form col-lg-6 col-md-6">
-      <label for="ValidationCustomEmail">Email</label>
-      <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend2"
-        placeholder="samuelipsum@email.com" required>
-      <div class="invalid-feedback">
-        Please write your full email!
-      </div>
+      <label for="email">Email</label>
+      <input type="email" class="email form-control" id="email" placeholder="samuelipsum@email.com" required>
 	  </div>
 	  <div class="mb-3 md-form col-lg-6 col-md-6">
-		<label for="ValidationCustomAddress">Address</label>
-      <input type="text" class="form-control" id="address" aria-describedby="inputGroupPrepend2"
+		<label for="address">Address</label>
+      <input type="text" class="address form-control" id="address" aria-describedby="inputGroupPrepend2"
         placeholder="Frederiklaan 199" required>
-      <div class="invalid-feedback">
-        Please fill this field!
-      </div>
     </div>
     <div class="col-md-6 mb-3 md-form col-lg-6">
-      <label for="validationCustom032">City</label>
-      <input type="text" class="form-control" id="city" placeholder="Eindhoven" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
+      <label for="city">City</label>
+      <input type="text" class="city form-control" id="city" placeholder="Eindhoven" required>
     </div>
 <div class="mb-3 md-form col-lg-6 col-md-6">
-  <label for="validationCustom052">Zip</label>
-      <input type="text" class="form-control" id="zipcode" placeholder="5616NG" required>
-      <div class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
+  <label for="zipcode">Zip</label>
+      <input type="text" class="zipcode form-control" id="zipcode" placeholder="5616NG" required>
   </div>
 	  <div class="mb-3 md-form col-lg-6 col-md-6">
-		<label for="ValidationCustomDoB">Date of Birth</label>
-      <input type="date" class="form-control" id="dob" aria-describedby="inputGroupPrepend2"
-        placeholder="01/01/1990" required>
-      <div class="invalid-feedback">
-        Please fill this field!
-      </div>
+		<label for="birthday">Date of Birth</label>
+      <input type="date" class="birthday form-control" id="birthday" placeholder="01/01/1990" required>
     </div>
 		 <div class="mb-3 md-form col-lg-6 col-md-6">
-		<label for="ValidationCustomTel">Telephone</label>
-      <input type="text" class="form-control" id="phonenumber" aria-describedby="inputGroupPrepend2"
-        placeholder="0031-999-999-999" required>
-      <div class="invalid-feedback">
-        Please fill this field correctly!
-      </div>
+		<label for="telephone">Telephone</label>
+      <input type="text" class="telephone form-control" id="telephone" placeholder="0031-999-999-999" required>
     </div>
 		 <div class="mb-3 md-form col-lg-4 offset-lg-4 col-md-4 offset-md-4">
-		<label for="ValidationCustomCourse">Course</label>
-      <select type="text" class="form-control" id="course" aria-describedby="inputGroupPrepend2" required>
+		<label for="course">Course</label>
+      <select type="text" class="course form-control" id="course" required>
 		  <option>Please select...</option>
 		  <option>Option 1</option>
 		  <option>Option 2</option>
 		  <option>Option 3</option>
             </select>
-      <div class="invalid-feedback">
-        Please Select a course!
-      </div>
-		 </div>	 
 	 </div>
-	 
+		  </div>
   <div class="form-group">
-    <div class="form-check pl-0">
+    <div class="form-check pl-0 col-lg-4 offset-lg-4">
       <input class="form-check-input checkbox" type="checkbox" value="" id="checkbox" required>
       <label class="form-check-label" for="invalidCheck2">
         Agree to terms and conditions
@@ -165,12 +173,11 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-primary btn-sm btn-rounded" type="submit">Submit form</button>
+  <button class="btn btn-primary btn-sm btn-rounded submit" type="submit" value="Submit">Submit form</button>
 </form>
 
     </div>
   </div>
-	<script>$("#needs-validation").validate();</script>
 
 
   <!-- Footer -->
@@ -340,7 +347,7 @@
   <!-- Footer -->
 
   <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--   jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -350,8 +357,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-<!--	<script src="js/jquery.signup-form.js"></script>-->
-	<script src="js/JSforapply.js"></script>
 </body>
 
 </html>
