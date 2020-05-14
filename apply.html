@@ -2,56 +2,23 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit=no">
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="style.css">
-	
-	<script src="js/lib/jquery.js"></script>
-	<script src="js/dist/jquery.validate.js"></script>
-	<script>
-	$.validator.setDefaults({
-		submitHandler: function() {
-			alert("submitted!");
-		}
-	});
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit=no">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--  validation script  -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
 
-	$().ready(function() {
-		// validate the comment form when it is submitted
-		$("#commentForm").validate();
+  <!--  jsrender script  -->
+  <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 
-		// validate signup form on keyup and submit
-		$("#signupForm").validate({
-			rules: {
-				firstname: {
-					required: true
-				},
-				lastname: "required",
-				email: {
-					required: true,
-					email: true
-				},
-				address: "required",
-				city: "required",
-				zipcode: "required",
-				birthday: "required",
-				telephone: "required",
-				course: "required",
-				agree: "required"
-			},
-			messages: {
-				firstname: "Please enter your firstname",
-				lastname: "Please enter your lastname",
-				email: "Please enter a valid email address",
-				agree: "Please accept our policy",
-				topic: "Please select at least 2 topics"
-			}
-		});
-
-	</script>
-	
-
-  <title>HanTang - Apply Now</title>
+  <!-- Essential JS UI widget -->
+  <script src="http://cdn.syncfusion.com/16.4.0.52/js/web/ej.web.all.min.js"></script>
+	<script src="js/signupjs.js"></script>
+  
+	<title>HanTang - Apply Now</title>
 </head>
 
 <body>
@@ -121,36 +88,36 @@
   <div class="form-row">
     <div class="mb-3 md-form col-lg-6 col-md-6" >
       <label for="firstname">First name</label>
-      <input type="text" class="firstname form-control" id="firstname" placeholder="Samuel L." required>
+      <input type="text" name="firstname" class="firstname form-control" id="firstname" placeholder="Samuel L." required>
     </div>
     <div class="mb-3 md-form col-lg-6 col-md-6">
       <label for="lastname">Last name</label>
-      <input type="text" class="lastname form-control" id="lastname" placeholder="Ipsum" required>
+      <input type="text" name="lastname" class="lastname form-control" id="lastname" placeholder="Ipsum" required>
 	  </div>
     <div class="mb-3 md-form col-lg-6 col-md-6">
       <label for="email">Email</label>
-      <input type="email" class="email form-control" id="email" placeholder="samuelipsum@email.com" required>
+      <input type="email" name="email" class="email form-control" id="email" placeholder="samuelipsum@email.com" required>
 	  </div>
 	  <div class="mb-3 md-form col-lg-6 col-md-6">
 		<label for="address">Address</label>
-      <input type="text" class="address form-control" id="address" aria-describedby="inputGroupPrepend2"
+      <input type="text" name="address" class="address form-control" id="address" aria-describedby="inputGroupPrepend2"
         placeholder="Frederiklaan 199" required>
     </div>
     <div class="col-md-6 mb-3 md-form col-lg-6">
       <label for="city">City</label>
-      <input type="text" class="city form-control" id="city" placeholder="Eindhoven" required>
+      <input type="text" name="city" class="city form-control" id="city" placeholder="Eindhoven" required>
     </div>
 <div class="mb-3 md-form col-lg-6 col-md-6">
   <label for="zipcode">Zip</label>
-      <input type="text" class="zipcode form-control" id="zipcode" placeholder="5616NG" required>
+      <input type="text" name="zipcode" class="zipcode form-control" id="zipcode" placeholder="5616NG" required>
   </div>
 	  <div class="mb-3 md-form col-lg-6 col-md-6">
 		<label for="birthday">Date of Birth</label>
-      <input type="date" class="birthday form-control" id="birthday" placeholder="01/01/1990" required>
+      <input type="date" name="birthday" class="birthday form-control" id="birthday" placeholder="01/01/1990" required>
     </div>
 		 <div class="mb-3 md-form col-lg-6 col-md-6">
 		<label for="telephone">Telephone</label>
-      <input type="text" class="telephone form-control" id="telephone" placeholder="0031-999-999-999" required>
+      <input type="text" name="telephone" class="telephone form-control" id="telephone" placeholder="0031-999-999-999" required>
     </div>
 		 <div class="mb-3 md-form col-lg-4 offset-lg-4 col-md-4 offset-md-4">
 		<label for="course">Course</label>
@@ -164,7 +131,7 @@
 		  </div>
   <div class="form-group">
     <div class="form-check pl-0 col-lg-4 offset-lg-4">
-      <input class="form-check-input checkbox" type="checkbox" value="" id="checkbox" required>
+      <input name="agree" class="form-check-input checkbox" type="checkbox" value="" id="checkbox" required>
       <label class="form-check-label" for="invalidCheck2">
         Agree to terms and conditions
       </label>
@@ -343,20 +310,20 @@
     </div>
     <!-- Copyright -->
 
-  </footer>
+	</footer>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/dist/jquery.validate.js"></script>
   <!-- Footer -->
-
+	
   <!-- Optional JavaScript -->
-<!--   jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+  <!--   Popper.js, Bootstrap JS initialization -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  
 </body>
 
 </html>
