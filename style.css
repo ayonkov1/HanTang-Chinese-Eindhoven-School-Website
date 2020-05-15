@@ -1,3 +1,11 @@
+.hover{
+	color: #ffbe0b;
+	font-size: 20px
+}
+
+
+
+
 a:link, a:visited, a:hover, a:active {
   color: white;
 }
