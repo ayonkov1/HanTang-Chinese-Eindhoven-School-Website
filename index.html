@@ -26,7 +26,7 @@
 
 <body>
 
-  <!--navigation bar-->
+ <!--navigation bar-->
   <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0072af">
     <a class="navbar-brand" href="index.html">
       <img src="logo.svg" alt="Hantang logo" width="220"></a>
@@ -36,18 +36,26 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-
-        <a id="hljs" class="nav-link" href="apply.html">Apply Now! </a>
-
+        <li class="nav-item active">
+          <a class="nav-link" href="apply.html">Apply Now! </a>
+        </li>
         <li class="nav-item dropdown">
           <div class="btn-group"> <a href="index.html">
-
               <button type="button" class="btn btn-dark">Home</button>
             </a>
-
-            <button type="button" onclick="hideShowDropdown()" data-toggle="dropdown"
-              class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+            <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span
+                class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <a class="dropdown-item" href="news.html">News</a>
+              <a class="dropdown-item" href="gallery.html">Gallery</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="rules.html">Rules</a> <a class="dropdown-item"
+                href="Parking.html">Parking</a>
+            </ul>
           </div>
+        </li>
+		  <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="history.html">History</a>
