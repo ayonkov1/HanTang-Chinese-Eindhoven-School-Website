@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../bootstrap.css">
   <link rel="stylesheet" href="../style.css">
 
-  <title>HanTang - Profile Admin</title>
+  <title>HanTang - Contact Admin</title>
 </head>
 
 <body>
@@ -68,68 +68,74 @@
   </nav>
   <!--navbar end-->
 
-<div class="container">
-    <div class="jumbotron">
-	<div class="apply-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-       <h1 class="display-4">Administrator Profile</h1>
-     </div>
-     
-  <hr class="my-4">
-  <center><h3 class="display-4">Add New People</h3></center>
-	  <div class="row">
-      </div>
-      <div class="form-group">
-      <label for="inputStudentName">Student</label>
-      <input type="name" class="form-control" id="inputStudentName" placeholder="Students name">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="apply-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-5">If you've got a question, don't hesitate to contact us. We'd be happy to help!
+                </h1>
+                <hr class="my-4">
+                <h3 class="display-5">Contact details</h3>
+                <p class="lead">E-mail address: <a style="opacity:60%;">Hantang.Chinese1@gmail.com</a>
+                    <!--<a href="mailto:put school email here" id=linkemail>school email </a> <--><br>
+                    Phone number: <a style="opacity:60%;">N/A</a>
+                    <!--phone of school--> <br>
+                    WhatsApp: <a style="opacity:60%;">N/A</a>
+                    <!--phone number--> <br>
+                    Visit us at: <a style="color:#2467a6;" href="https://bit.ly/2yX5abM">Frederiklaan 199, 5616 NG Eindhoven, Netherlands</a>
+                    <!--address--> <br>
+                    Working hours: <a style="opacity:60%;">classes on Saturday mornings- 35 Saturdays (9: 15-11: 45)
+                    <br>
+                    When registering, you register for a specific course and a specific course year. For all course years of all courses, they are given with sufficient interest. The appendix lessons are given from 11:50 to 12:30 after the regular lessons. agenda 2019-2020:  <a style="color:#2467a6;" href="http://www.hantang.nl/wordpress/wp-content/uploads/2019/07/agenda-2019-2020.pdf">agenda-2019-2020.pdf</a></a>
+                    <!--work hours-->
+                </p>
+                <hr class="my-4">
+                <h3 class="display-5">Or ask us your question via our contact form.</h3>
+            </div>
+
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputLastName">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telephone</label>
+                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                </div>
+                <div class="form-group">
+                    <label for="courses">What is your question about?</label>
+                    <select id="courses" class="form-control">
+                        <option value="opt1">Registration</option>
+                        <option value="opt2">Courses</option>
+                        <option value="opt3">Cost</option>
+                        <option value="else">Something else</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject: </label>
+                    <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <a class="btn btn-danger btn-lg float-right ml-1" href="#" role="button">Edit</a>
+        </div>
     </div>
-      <div class="form-group">
-      <label for="StudentClass">Class</label>
-      <input type="classes" class="form-control" id="StudentClass" placeholder="Class">
-    </div>
-       <div class="col-md-1">
-            <button type="submit" class="btn btn-primary">Add</button>
-      </div>
-
-      <br>
-
-      <div class="row">
-      </div>
-      <div class="form-group">
-      <label for="inputTeacherName">Teacher</label>
-      <input type="name" class="form-control" id="inputTeacherName" placeholder="Teachers name">
-    </div>
-      <div class="form-group">
-      <label for="TeachersClass">Class</label>
-      <input type="classes" class="form-control" id="TeachersClass" placeholder="Class">
-    </div>
-       <div class="col-md-1">
-            <button type="submit" class="btn btn-primary">Add</button>
-      </div>
-
-		<a class="btn btn-lg text-dark float-right" href="#" role="button"><u>View Student List</u></a>
-      </div>
-	</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <footer class="page-footer font-small unique-color-dark">
+   <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark">
 
     <div style="background-color: #007bff;">
       <div class="container">
@@ -195,9 +201,9 @@
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <h6 class="text-uppercase font-weight-bold"><a href="contactsAdmin.html">Contacts</a></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-      <h6 class="text-uppercase font-weight-bold"><a href="teamAdmin.html">Our Team</a></h6>
+			<h6 class="text-uppercase font-weight-bold"><a href="teamAdmin.html">Our Team</a></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-      <h6 class="text-uppercase font-weight-bold"><a href="../index.html">Log out</a></h6>
+			<h6 class="text-uppercase font-weight-bold"><a href="../index.html">Log out</a></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 
         </div>
@@ -234,17 +240,19 @@
     <!-- Copyright -->
 
   </footer>
+	
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

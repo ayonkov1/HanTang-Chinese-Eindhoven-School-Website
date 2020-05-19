@@ -19,15 +19,10 @@ function check() {
 
     // check if stored data from register-form is equal to data from login form
     if (userEmail.value == storedEmail.value && userPw.value == storedPw.value && userName.value == storedName.value) {
+        var url = "http://i426654.hera.fhict.nl/student%20html/MyProfile.html";
         alert('You are loged in.');
-        loggedIn = true;
+        window.location.replace(url);
     } else {
         alert('ERROR.');
-    }
-}
-
-function redirect() {
-    if (loggedIn = true){
-    // window.location.href (/student html/MyProfile.html);
     }
 }
