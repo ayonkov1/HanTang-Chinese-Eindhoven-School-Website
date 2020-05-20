@@ -1,3 +1,17 @@
+        .map-container {
+          overflow: hidden;
+          position: relative;
+          height: 0;
+        }
+
+        .map-container iframe {
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+
 .hover{
 	color: #ffbe0b;
 	font-size: 20px
@@ -17,7 +31,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 body {
-  background-image: url(https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png);
+  background-image: url("images/background-final.svg");
+	background-size: cover;
   /* background: rgb(228, 98, 98);
   background: linear-gradient(180deg, rgba(228, 98, 98, 1) 0%, rgba(24, 24, 24, 1) 100%); */
 }
