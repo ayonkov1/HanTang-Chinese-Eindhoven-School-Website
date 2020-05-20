@@ -1,4 +1,10 @@
-        .map-container {
+h1{
+  font-family:'ArchitectsDaughter Regular'!important;
+  font-style: oblique;
+	
+}
+
+.map-container {
           overflow: hidden;
           position: relative;
           height: 0;
@@ -33,6 +39,7 @@ a:link, a:visited, a:hover, a:active {
 body {
   background-image: url("images/background-final.svg");
 	background-size: cover;
+	
   /* background: rgb(228, 98, 98);
   background: linear-gradient(180deg, rgba(228, 98, 98, 1) 0%, rgba(24, 24, 24, 1) 100%); */
 }
