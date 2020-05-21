@@ -1,28 +1,31 @@
 // script used for login.html validation
-
-var email = document.getElementById("email");
-var username = document.getElementById("usrname");
-var password = document.getElementById("psw");
-var loggedIn = false;
-
 function check() {
 
-    // stored data from the register-form
-    var storedEmail = localStorage.getItem('email');
-    var storedName = localStorage.getItem('username');
-    var storedPw = localStorage.getItem('password');
+   var email = document.getElementById("email").value;
+   var username = document.getElementById("usrname").value;
+   var password = document.getElementById("psw").value;
+   var loggedIn = false;
 
-    // entered data from the login-form
-    var userEmail = email.value;
-    var userName = username.value;
-    var userPw = password.value;
+    // stored data from the register-form
+    var storedEmail = localStorage.getItem("email");
+    var storedName = localStorage.getItem("username");
+    var storedPw = localStorage.getItem("password");
+
+
 
     // check if stored data from register-form is equal to data from login form
-    if (userEmail.value == storedEmail.value && userPw.value == storedPw.value && userName.value == storedName.value) {
-        var url = "http://i426654.hera.fhict.nl/student%20html/MyProfile.html";
-        alert('You are loged in.');
-        window.location.replace(url);
-    } else {
+    if (email == storedEmail && password == storedPw && username == storedName) 
+    {
+
+
+        alert('You are logged in.');
+        window.location.replace("http://i426654.hera.fhict.nl/student%20html/MyProfile.html");
+    }
+       
+     else {
         alert('ERROR.');
     }
+    
 }
+ 
+
