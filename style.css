@@ -1,3 +1,10 @@
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #0072af !important;
+}
+
+
 h1{
   font-family:'ArchitectsDaughter Regular'!important;
   font-style: oblique;
