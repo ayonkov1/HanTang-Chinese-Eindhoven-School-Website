@@ -18,6 +18,7 @@ function store() {
         localStorage.setItem('email', email.value);
         localStorage.setItem('username', username.value);
         localStorage.setItem('password', password.value);
+        window.location.replace("http://i426654.hera.fhict.nl/login.html");
     }
 
 }
