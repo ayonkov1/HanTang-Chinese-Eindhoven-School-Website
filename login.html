@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login test</title>
+  <title>HanTang - Login</title>
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-<!--navigation bar-->
+  <!--navigation bar-->
   <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0072af">
     <a class="navbar-brand" href="index.html">
       <img src="logo.svg" alt="Hantang logo" width="220"></a>
@@ -39,7 +39,7 @@
             </ul>
           </div>
         </li>
-		  <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="courses.html">Courses</a>
         </li>
         <li class="nav-item">
@@ -61,61 +61,62 @@
     </div>
   </nav>
   <!--navbar end-->
-<center><div class="container">
-  <div class="offset-xl-0 col-xl-4" id="login">
-    <div class="login">
-      <h3 class="text-center text-info">Login</h3>
-      <div id="login-row" class="row justify-content-center align-items-center">
-        <div id="login-column" class="col-md-6 col-xl-11">
-          <div id="login-box" class="col-md-12">
-            <form id="login-form" class="form" action="" method="post">
-              <div class="form-group">
-                <label for="email" class="text-info">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-                <div id="message-email">
-                  <p id="letterEmail" class="invalid">Please fill in your <b>email</b>!</p>
-                </div>
+  <center>
+    <div class="container">
+      <div class="offset-xl-0 col-xl-4" id="login">
+        <div class="login">
+          <h3 class="text-center text-info">Login</h3>
+          <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6 col-xl-11">
+              <div id="login-box" class="col-md-12">
+                <form id="login-form" class="form" action="" method="post">
+                  <!-- <div class="form-group">
+                    <label for="email" class="text-info">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <div id="message-email">
+                      <p id="letterEmail" class="invalid">Please fill in your <b>email</b>!</p>
+                    </div>
+                  </div> -->
+                  <div class="form-group">
+                    <label for="usrname" class="text-info">Username:</label>
+                    <input type="text" id="usrname" name="usrname" class="form-control" required>
+                    <div id="message-user">
+                      <p id="letterUser" class="invalid">Please fill in your <b>username</b>!</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="psw" class="text-info">Password:</label>
+                    <input type="password" id="psw" name="psw" class="form-control"
+                      title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                      required>
+                    <div id="message">
+                      <p id="letter" class="invalid">Please fill in your <b>password</b>!</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="remember-me" class="text-info"><span>Remember me</span> 
+                      <span>
+                        <input id="remember-me" name="remember-me" type="checkbox">
+                      </span>
+                    </label>
+                    <br>
+                    <button type="button" class="btn btn-info btn-md" onclick="check()">
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="usrname" class="text-info">Username:</label>
-                <input type="text" id="usrname" name="usrname" class="form-control" required>
-                <div id="message-user">
-                  <p id="letterUser" class="invalid">Please fill in your <b>username</b>!</p>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="psw" class="text-info">Password:</label>
-                <input type="password" id="psw" name="psw" class="form-control"
-                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                  required>
-                <div id="message">
-                  <p id="letter" class="invalid">Please fill in your <b>password</b>!</p>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="remember-me" class="text-info"><span>Remember me</span> 
-                  <span>
-                    <input id="remember-me" name="remember-me" type="checkbox">
-                  </span>
-                </label>
-                <br>
-                <button type="submit" class="btn btn-info btn-md" onclick="check()" onclick="redirect()">
-                  Submit
-                </button>
-              </div>
-            </form>
+            </div>
+            <div class="form-group">
+              <a class="text-center text-danger" href="register.html">Don't have an account, register here!</a>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <a class="text-center text-info" href="register.html">Don't have an account, register here!</a>
         </div>
       </div>
     </div>
-  </div>
-	</div>
-</center>
-	
-	<!-- Footer -->
+  </center>
+
+  <!-- Footer -->
   <footer class="page-footer font-small unique-color-dark">
 
     <div style="background-color: #007bff;">
@@ -126,7 +127,8 @@
 
           <!-- Grid column -->
           <div class="col-md-6 text-center text-md-right mb-4 mb-md-0 col-lg-7">
-            <h5 class="mb-0">If you would like to contact us, please <a href="contacts.html" style="color: aliceblue">click here.</a></h5>
+            <h5 class="mb-0">If you would like to contact us, please <a href="contacts.html"
+                style="color: aliceblue">click here.</a></h5>
           </div>
 
         </div>
@@ -182,9 +184,9 @@
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <h6 class="text-uppercase font-weight-bold"><a href="contacts.html">Contacts</a></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-			<h6 class="text-uppercase font-weight-bold"><a href="team.html">Our Team</a></h6>
+          <h6 class="text-uppercase font-weight-bold"><a href="team.html">Our Team</a></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-			<h6 class="text-uppercase font-weight-bold"><a href="login.html">Log in</a></h6>
+          <h6 class="text-uppercase font-weight-bold"><a href="login.html">Log in</a></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 
         </div>
@@ -221,9 +223,9 @@
     <!-- Copyright -->
 
   </footer>
-	
+
 </body>
-	
+
 
 <script src="js/custom-scripts/login-check-redirect.js"></script>
 <script src="js/custom-scripts/email-input-validation.js"></script>
