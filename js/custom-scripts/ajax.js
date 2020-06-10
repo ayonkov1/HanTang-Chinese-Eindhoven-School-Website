@@ -15,8 +15,8 @@ function loadApi() {
             var date = parsedText.currentDateTime;
             var day = parsedText.dayOfTheWeek;
 
-            document.getElementById("time").innerHTML = date.slice(0, 10);
-            document.getElementById("day").innerHTML = day;
+            document.getElementById("time").innerHTML = "Date: " + date.slice(0, 10);
+            document.getElementById("day").innerHTML = "Today is: " + day;
         }
     });
 
