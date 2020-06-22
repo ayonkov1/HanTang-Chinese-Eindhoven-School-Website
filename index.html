@@ -2,308 +2,347 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="carousel.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="carousel.css">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/custom-scripts/mega-dropdown-navbar.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="js/custom-scripts/carousel.js"></script>
-  <script src="js/custom-scripts/ajax.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<script src="js/custom-scripts/carousel.js"></script>
+	<script src="js/custom-scripts/ajax.js"></script>
+	<script src="js/custom-scripts/mega-dropdown-navbar.js"></script>
+	<script src="js/custom-scripts/dark-mode.js"></script>
+	<script src="js/custom-scripts/hide-show-jquery.js"></script>
 
-  <title>HanTang - Main</title>
+
+	<title>HanTang - Main</title>
 </head>
 
 
 <body>
+	<div class="background-image">
 
-  <!--navigation bar-->
-  <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0072af">
-    <a class="navbar-brand" href="index.html">
-      <img src="logo.svg" alt="Hantang logo" width="220"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="apply.html">Apply Now! </a>
-        </li>
-        <li class="nav-item dropdown">
-          <div class="btn-group"> <a href="index.html">
-              <button type="button" class="btn btn-dark">Home</button>
-            </a>
-            <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span
-                class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <a class="dropdown-item" href="news.html">News</a>
-              <a class="dropdown-item" href="gallery.html">Gallery</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="rules.html">Rules</a> <a class="dropdown-item"
-                href="Parking.html">Parking</a>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="courses.html">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="history.html">History</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacts.html">Contacts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="team.html">Our Staff</a>
-        </li>
-      </ul>
-      <!--	to be used for future ref. this is search...
+
+		<!--navigation bar-->
+		<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #0072af">
+			<a class="navbar-brand" href="index.html">
+				<img src="logo.svg" alt="Hantang logo" width="220"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="apply.html">Apply Now! </a>
+						</li>
+						<li class="nav-item dropdown">
+							<div class="btn-group"> <a href="index.html">
+									<button type="button" class="btn btn-dark">Home</button>
+								</a>
+								<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span
+                  class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<a class="dropdown-item" href="news.html">News</a>
+									<a class="dropdown-item" href="gallery.html">Gallery</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="rules.html">Rules</a> <a class="dropdown-item"
+										href="Parking.html">Parking</a>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="courses.html">Courses</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="history.html">History</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacts.html">Contacts</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="team.html">Our Staff</a>
+						</li>
+
+					</ul>
+					<!--	to be used for future ref. this is search...
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
         </form>
 -->
-      <a href="login.html"><button type="button" class="btn btn-dark">Log in</button>
-      </a>
-    </div>
-  </nav>
-  <!--navbar end-->
+					<a class="a-dark-mode"><button type="button" class="btn btn-dark-mode">Dark</button>
+					</a>
+					<a class="a-light-mode"><button type="button" class="btn btn-dark btn-light-mode">Light</button>
+					</a>
+					<a href="login.html"><button type="button" class="btn btn-dark">Log in</button>
+					</a>
+				</div>
+		</nav>
+		<!--navbar end-->
 
 
 
 
-  <!-- jumbotron -->
-  <div class="container">
-    <center>
-      <div class="jumbotron">
-        <h1 class="display-4">Education Without Borders</h1>
-        <p class="lead">At HanTang Chinese Language School In Eindhoven</p>
+		<!-- jumbotron -->
+		<div class="container">
+			<center>
+				<div class="jumbotron">
+					<h1 class="display-4">Education Without Borders</h1>
+					<p class="lead">At HanTang Chinese Language School In Eindhoven</p>
 
-        <a class="btn btn-primary btn-lg" href="apply.html" role="button">Apply here!</a>
-      </div>
-    </center>
-  </div>
+					<a class="btn btn-primary btn-lg" href="apply.html" role="button">Apply here!</a>
+				</div>
+			</center>
+		</div>
 
 
 
-  <!-- cards -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Parking</h5>
-            <p class="card-text">There is a parking ban along the sidewalk on the side of the school. It is
-              allowed to leave the car there for a while to let children get in or out while the driver stays
-              in the car. Every driver must try to park the car in the school's car park as long as there is
-              still room, even if they park for a short time.
-            </p>
+		<!-- cards -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Parking</h5>
+							<p class="card-text">There is a parking ban along the sidewalk on the side of the school. It
+								is
+								allowed to leave the car there for a while to let children get in or out while the
+								driver stays
+								in the car. Every driver must try to park the car in the school's car park as long as
+								there is
+								still room, even if they park for a short time.
+							</p>
+						</div>
+						<a href="Parking.html" class="btn btn-primary">See details</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Rules</h5>
+							<p class="card-text">In our establishment we take pride in our important values. This is why
+								we have
+								a couple of crucial rules, which we take seriously. Before applying for our courses
+								please make sure
+								to be well aware of them and please contact us if you have any questions regarding them.
+								Thank you
+								in advance.
+							</p>
+						</div>
+						<a href="Rules.html" class="btn btn-primary">See the rules</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Costs</h5>
+							<p class="card-text">Registration for courses is preferably done before 1 September at the
+								beginning of
+								each school year. Registration during the school year is possible in consultation with
+								the management.
+								For the 2019-2020 school year, the course fee is as it follows in the page linked bellow
+								(All prices
+								are in Euro.)
+							</p>
+						</div>
+						<a href="courses.html" class="btn btn-primary">Go to page</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cards -->
+
+		<div class="container">
+			<center>
+				<p class="dark-text-p">Click on SHOW for more info!</p>
+				<button class="btn btn-secondary" id="hide">Hide</button>
+				<button class="btn btn-secondary" id="show">Show</button>
+			</center>
+		</div>
+
+
+		<div class="hide-show">
+			<div class="container">
+				<center>
+
+					<div class="sampletext">
+						<h2 id="time">Date: </h2>
+						<h2 id="day">Today is: </h2>
+						<a class="btn btn-secondary btn-sm" role="button" onclick="loadApi()">Get current date and
+							day</a>
+
+					</div>
+				</center>
+			</div>
+
+			<!-- carousel -->
+			<div class="container">
+
+				<div class="container-carousel">
+					<div class="slider-outer">
+						<button class="prev btn btn-success">&#9665;</button>
+						<div class="slider-inner">
+							<img src="images/Carousel/anniversary.jpg" class="active">
+							<img src="images/Carousel/building.jpg">
+							<img src="images/Carousel/karate.jpg">
+							<img src="images/Carousel/Team.jpg">
+            </div>
+							<button class="next btn btn-success">&#9655;</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- carousel -->
+
+			<!-- maps -->
+			<div class="container-fluid-navbar mb-5">
+				<!-- maps -->
+				<!-- Google Maps -->
+				<div id="full-width-map" class="z-depth-1-half map-container" style="height: 500px">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.899595361299!2d5.454080315863116!3d51.44163777962438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6d96d6f2952e3%3A0x683871466d97d88!2sStichting%20Eindhoven%20Chinese%20School!5e0!3m2!1sen!2sbg!4v1587651271687!5m2!1sen!2sbg"
+						frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<!-- Google Maps -->
+
+				</section>
+				<!-- Section: Block Content -->
+
+			</div>
+			<!-- maps -->
+
+
+
+
+			<!-- Footer -->
+			<footer class="page-footer font-small unique-color-dark">
+
+				<div style="background-color: #007bff;">
+					<div class="container">
+
+						<!-- Grid row-->
+						<div class="row py-4 d-flex align-items-center">
+
+							<!-- Grid column -->
+							<div class="col-md-6 text-center text-md-right mb-4 mb-md-0 col-lg-7">
+								<h5 class="mb-0">If you would like to contact us, please <a href="contacts.html"
+										style="color: aliceblue">click here.</a></h5>
+							</div>
+
+						</div>
+						<!-- Grid row-->
+
+					</div>
+				</div>
+
+				<!-- Footer Links -->
+				<div class="container text-center text-md-left mt-5">
+
+					<!-- Grid row -->
+					<div class="row mt-3">
+
+						<!-- Grid column -->
+						<div class="col-md-3 mx-auto mb-4 col-lg-4 col-xl-4">
+
+							<!-- Content -->
+							<h6 class="text-uppercase font-weight-bold">HanTang Language School</h6>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+							<img src="logo_black.svg" alt="Hantang logo" width="100%">
+
           </div>
-          <a href="Parking.html" class="btn btn-primary">See details</a>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Rules</h5>
-            <p class="card-text">In our establishment we take pride in our important values. This is why we have
-              a couple of crucial rules, which we take seriously. Before applying for our courses please make sure
-              to be well aware of them and please contact us if you have any questions regarding them. Thank you
-              in advance.
-            </p>
-          </div>
-          <a href="Rules.html" class="btn btn-primary">See the rules</a>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Costs</h5>
-            <p class="card-text">Registration for courses is preferably done before 1 September at the beginning of
-              each school year. Registration during the school year is possible in consultation with the management.
-              For the 2019-2020 school year, the course fee is as it follows in the page linked bellow (All prices
-              are in Euro.)
-            </p>
-          </div>
-          <a href="courses.html" class="btn btn-primary">Go to page</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- cards -->
+							<!-- Grid column -->
 
-  <div class="container">
-    <center>
-      <div class="jumbotron">
-        <div class="sampletext">
-          <h2 id="time">Date: </h2>
-          <h2 id="day">Today is: </h2>
-          <a class="btn btn-secondary btn-sm" role="button" onclick="loadApi()">Get current date and day</a>
-        </div>
-      </div>
-    </center>
-  </div>
+							<!-- Grid column -->
+							<div class="col-md-2 col-md-2 col-md-2 mx-auto mb-4 offset-lg-1 col-lg-2">
 
-  <!-- carousel -->
-  <div class="container">
-    <div class="jumbotron">
-      <div class="h6">Press any button to see images</div>
-      <img class="mySlides" src="images/Carousel/anniversary.jpg">
-      <img class="mySlides" src="images/Carousel/building.jpg">
-      <img class="mySlides" src="images/Carousel/karate.jpg">
-      <img class="mySlides" src="images/Carousel/Team.jpg">
+								<!-- Links -->
+								<h6 class="text-uppercase font-weight-bold"><a href="index.html">Home</a></h6>
+								<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+								<p>
+									<a href="news.html">News</a>
+								</p>
+								<p>
+									<a href="gallery.html">Gallery</a>
+								</p>
+								<p>
+									<a href="rules.html">Rules</a>
+								</p>
+								<p>
+									<a href="Parking.html">Parking</a>
+								</p>
 
-      <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="next" onclick="plusDivs(1)">&#10095;</button>
-    </div>
-  </div>
-  <!-- carousel -->
+							</div>
+							<!-- Grid column -->
 
-  <!-- maps -->
-  <div class="container-fluid-navbar mb-5">
-    <!-- maps -->
-    <!-- Google Maps -->
-    <div id="full-width-map" class="z-depth-1-half map-container" style="height: 500px">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.899595361299!2d5.454080315863116!3d51.44163777962438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6d96d6f2952e3%3A0x683871466d97d88!2sStichting%20Eindhoven%20Chinese%20School!5e0!3m2!1sen!2sbg!4v1587651271687!5m2!1sen!2sbg"
-        frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <!-- Google Maps -->
+							<!-- Grid column -->
+							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
-    </section>
-    <!-- Section: Block Content -->
+								<!-- Links -->
+								<h6 class="text-uppercase font-weight-bold"><a href="history.html">History</a></h6>
+								<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+								<h6 class="text-uppercase font-weight-bold"><a href="contacts.html">Contacts</a></h6>
+								<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+								<h6 class="text-uppercase font-weight-bold"><a href="team.html">Our Team</a></h6>
+								<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+								<h6 class="text-uppercase font-weight-bold"><a href="login.html">Log in</a></h6>
+								<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
 
-  </div>
-  <!-- maps -->
+							</div>
+							<!-- Grid column -->
+
+							<!-- Grid column -->
+							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+								<!-- Links -->
+								<h6 class="text-uppercase font-weight-bold">Contact</h6>
+								<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+								<p>
+									<i class="fas fa-home mr-3"></i> Eindhoven, 5616NG, NL</p>
+								<p>
+									<i class="fas fa-envelope mr-3"></i> hantang.chinese1@gmail.com</p>
+								<p>
+									<i class="fas fa-phone mr-3"></i> + 01 234 567 89</p>
+								<p>
+									<i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+							</div>
+							<!-- Grid column -->
+
+						</div>
+						<!-- Grid row -->
+
+					</div>
+					<!-- Footer Links -->
+
+					<!-- Copyright -->
+					<div class="footer-copyright text-center py-3">© 2020 Copyright:
+						<a href="#"> Whasp Team</a>
+					</div>
+					<!-- Copyright -->
+
+			</footer>
+
+			<!-- Footer -->
 
 
-
-
-  <!-- Footer -->
-  <footer class="page-footer font-small unique-color-dark">
-
-    <div style="background-color: #007bff;">
-      <div class="container">
-
-        <!-- Grid row-->
-        <div class="row py-4 d-flex align-items-center">
-
-          <!-- Grid column -->
-          <div class="col-md-6 text-center text-md-right mb-4 mb-md-0 col-lg-7">
-            <h5 class="mb-0">If you would like to contact us, please <a href="contacts.html"
-                style="color: aliceblue">click here.</a></h5>
-          </div>
-
-        </div>
-        <!-- Grid row-->
-
-      </div>
-    </div>
-
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-5">
-
-      <!-- Grid row -->
-      <div class="row mt-3">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto mb-4 col-lg-4 col-xl-4">
-
-          <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">HanTang Language School</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <img src="logo_black.svg" alt="Hantang logo" width="100%">
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-md-2 col-md-2 mx-auto mb-4 offset-lg-1 col-lg-2">
-
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold"><a href="index.html">Home</a></h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a href="news.html">News</a>
-          </p>
-          <p>
-            <a href="gallery.html">Gallery</a>
-          </p>
-          <p>
-            <a href="rules.html">Rules</a>
-          </p>
-          <p>
-            <a href="Parking.html">Parking</a>
-          </p>
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold"><a href="history.html">History</a></h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <h6 class="text-uppercase font-weight-bold"><a href="contacts.html">Contacts</a></h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <h6 class="text-uppercase font-weight-bold"><a href="team.html">Our Team</a></h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <h6 class="text-uppercase font-weight-bold"><a href="login.html">Log in</a></h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Contact</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <i class="fas fa-home mr-3"></i> Eindhoven, 5616NG, NL</p>
-          <p>
-            <i class="fas fa-envelope mr-3"></i> hantang.chinese1@gmail.com</p>
-          <p>
-            <i class="fas fa-phone mr-3"></i> + 01 234 567 89</p>
-          <p>
-            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="#"> Whasp Team</a>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-
-  <!-- Footer -->
-
-
-  <!-- Optional JavaScript -->
-
+			<!-- Optional JavaScript -->
+		</div>
 </body>
 
 </html>
